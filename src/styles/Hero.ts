@@ -3,7 +3,9 @@ import { styled } from '../../stitches.config';
 export const Hero = styled('section', {
   alignItems: 'center',
   gap: '1rem',
-  marginTop: '8rem',
+  padding: '8rem 4rem 0',
+  backgroundImage: "url('/homeBg.png') no-repeat center center",
+  backgroundSize: 'cover',
 
   '.hero__content': {
     width: '85%',
