@@ -1,6 +1,6 @@
 import { createStitches, globalCss } from '@stitches/react';
 
-export const stitches = createStitches({
+export const { styled } = createStitches({
   theme: {
     fonts: {
       poppins: 'Poppins, sans-serif',
@@ -39,4 +39,4 @@ globalCss({
   },
 
   a: { textDecoration: 'none' },
-});
+})();
