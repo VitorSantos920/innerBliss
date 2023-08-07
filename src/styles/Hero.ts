@@ -25,18 +25,6 @@ export const Hero = styled('section', {
       lineHeight: '1.875rem',
       margin: '1rem 0 2rem',
     },
-
-    '.hero__btn': {
-      backgroundColor: '$darkGreen',
-      cursor: 'pointer',
-      padding: '1rem 2rem',
-      fontWeight: '$med',
-      border: 'none',
-      borderRadius: '0.625rem',
-      color: '#fff',
-
-      '&:hover': { opacity: '0.8' },
-    },
   },
 
   '.hero__img': {

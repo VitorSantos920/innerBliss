@@ -1,3 +1,4 @@
+import { Button } from './components/Button';
 import { Header } from './components/Header';
 import { Container } from './styles/Container';
 import { Hero } from './styles/Hero';
@@ -19,7 +20,7 @@ function App() {
                 unlock boundless potential for growth, healing, and inner bliss.
               </p>
               <a href="#">
-                <button className="hero__btn">Explore More</button>
+                <Button className="hero__btn" text="Explore More" />
               </a>
             </div>
 

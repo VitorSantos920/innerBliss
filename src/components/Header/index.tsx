@@ -1,3 +1,4 @@
+import { Button } from '../Button';
 import { HeaderContainer } from './style';
 
 export function Header() {
@@ -26,7 +27,7 @@ export function Header() {
           </li>
 
           <a href="#">
-            <button className="header__btn">Book Now</button>
+            <Button className="header__btn" text="Book Now" />
           </a>
         </ul>
       </nav>
