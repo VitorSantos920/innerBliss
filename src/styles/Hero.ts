@@ -4,7 +4,7 @@ export const Hero = styled('section', {
   alignItems: 'center',
   gap: '1rem',
   padding: '8rem 4rem 0',
-  backgroundImage: "url('/homeBg.png') no-repeat center center",
+  backgroundImage: "url('/homeBg.png')",
   backgroundSize: 'cover',
 
   '.hero__content': {
