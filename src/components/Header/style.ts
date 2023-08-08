@@ -10,6 +10,7 @@ export const HeaderContainer = styled('header', {
   maxWidth: 1366,
   width: '100%',
   padding: '2rem 4rem',
+  zIndex: 2,
 
   '.header__logo': {
     fontFamily: '$merriweather',
