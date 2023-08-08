@@ -1,9 +1,11 @@
 import { Button } from './components/Button';
 import { Header } from './components/Header';
+import { SectionSubtitle } from './components/SectionSubtitle';
 import { SectionTitle } from './components/SectionTitle';
 import { About } from './styles/About';
 import { Container } from './styles/Container';
 import { Hero } from './styles/Hero';
+import { Service } from './styles/Service';
 
 function App() {
   return (
@@ -39,9 +41,11 @@ function App() {
             <div className="about__content">
               <SectionTitle title="About Us" className="about__title" />
 
-              <h3 className="about__subtitle">
-                Unlock your potential, embrace self-discovery
-              </h3>
+              <SectionSubtitle
+                className="about__subtitle"
+                title="Unlock your potential, embrace self-discovery"
+              />
+
               <p className="about__description">
                 Ignite your inner light, nurture your well-being, and embark on
                 a soulful voyage of self-discovery.we are dedicated to creating
@@ -56,6 +60,15 @@ function App() {
               </a>
             </div>
           </About>
+
+          <Service className="service flex">
+            <SectionTitle title="What We Do" className="service__title" />
+
+            <SectionSubtitle
+              className="service__subtitle"
+              title="Positive Outcomes of Yoga"
+            />
+          </Service>
         </main>
       </Container>
     </>
