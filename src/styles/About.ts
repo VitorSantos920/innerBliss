@@ -10,21 +10,13 @@ export const About = styled('section', {
   '.about__content': {
     width: '85%',
 
-    '.about__subtitle, .about__description': { textTransform: 'capitalize' },
-
-    '.about__subtitle': {
-      color: '$titles',
-      fontFamily: 'Merriweather Sans',
-      fontSize: '2.5rem',
-      fontWeight: '$med',
-    },
-
     '.about__description': {
       fontFamily: '$poppins',
       color: '$descriptions',
       fontWeight: '$lgt',
       lineHeight: '1.5rem',
       margin: '1rem 0 2rem',
+      textTransform: 'capitalize',
     },
   },
 
