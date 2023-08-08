@@ -11,9 +11,3 @@ export const ServiceContainer = styled('article', {
 
   '.service__description': { margin: '1rem 0 0' },
 });
-
-export const ServiceTitle = styled('h4', {
-  fontFamily: '$merriweather',
-  fontSize: '1.25rem',
-  marginTop: '.5rem',
-});

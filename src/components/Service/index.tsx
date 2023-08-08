@@ -1,6 +1,7 @@
 import { ElementType } from 'react';
-import { ServiceContainer, ServiceTitle } from './style';
+import { ServiceContainer } from './style';
 import { Description } from '../../styles/Description';
+import { ArticleTitle } from '../../styles/ArticleTitle';
 
 interface ServiceProps {
   icon: ElementType;
@@ -16,7 +17,7 @@ export function Service({
   return (
     <ServiceContainer className="services__service">
       <ServiceIcon />
-      <ServiceTitle className="service__title">{title}</ServiceTitle>
+      <ArticleTitle className="service__title">{title}</ArticleTitle>
       <Description className="service__description">{description}</Description>
     </ServiceContainer>
   );
