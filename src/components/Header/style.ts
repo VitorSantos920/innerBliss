@@ -8,9 +8,13 @@ export const HeaderContainer = styled('header', {
   transform: 'translateX(-50%)',
   top: 0,
   maxWidth: 1366,
+  backdropFilter: 'blur(0)',
   width: '100%',
   padding: '2rem 4rem',
+  transition: '.3s',
   zIndex: 2,
+
+  '&.blur': { backdropFilter: 'blur(.75rem)' },
 
   '.header__logo': {
     fontFamily: '$merriweather',

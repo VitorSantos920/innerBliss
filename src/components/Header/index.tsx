@@ -1,9 +1,15 @@
+import { useState } from 'react';
 import { Button } from '../Button';
 import { HeaderContainer } from './style';
 
 export function Header() {
+  const [windowTop, setWindowTop] = useState(0);
+
+  window.addEventListener('scroll', () =>
+    setWindowTop(window.scrollY + (window.innerHeight * 3) / 4)
+  );
   return (
-    <HeaderContainer className="header flex">
+    <HeaderContainer className={`header flex ${windowTop > 590 && 'blur'}`}>
       <a href="#" className="header__logo">
         Inner Bliss
       </a>
