@@ -1,4 +1,4 @@
-import { createStitches, globalCss } from '@stitches/react';
+import { createStitches, globalCss, keyframes } from '@stitches/react';
 
 export const { styled } = createStitches({
   theme: {
@@ -23,6 +23,17 @@ export const { styled } = createStitches({
   },
 });
 
+const move = keyframes({
+  from: {
+    transform: 'translateY(0)',
+  },
+
+  to: {
+    transform: 'translateY(-10px)',
+    filter: 'drop-shadow(0px 1px 3px rgba(0, 0, 0, .7))',
+  },
+});
+
 globalCss({
   '*': {
     margin: 0,
@@ -40,4 +51,10 @@ globalCss({
   },
 
   a: { textDecoration: 'none' },
+
+  'img, article svg': {
+    animation: `${move} 2s alternate infinite ease-in-out`,
+  },
+
+  'article svg': { filter: 'none !important' },
 })();
