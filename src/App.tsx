@@ -11,6 +11,7 @@ import { SectionTitle } from './components/SectionTitle';
 import { Service } from './components/Service';
 import { About } from './styles/About';
 import { Container } from './styles/Container';
+import { Cta } from './styles/Cta';
 import { Description } from './styles/Description';
 import { Hero } from './styles/Hero';
 import { Services } from './styles/Services';
@@ -115,6 +116,28 @@ function App() {
               />
             </div>
           </Services>
+
+          <Cta className="cta flex">
+            <div className="cta__content">
+              <SectionSubtitle
+                title="Nurture Your Body Mind and Soul through the Practice of Yoga"
+                className="cta__title"
+              />
+
+              <Description className="cta__description">
+                Indulge in the sacred art of yoga as it weaves its gentle
+                embrace around your being, nurturing every facet of your
+                existence.
+              </Description>
+              <a href="#">
+                <Button className="cta__btn" text="Join Now" />
+              </a>
+            </div>
+
+            <div className="cta__img">
+              <img src="cta__img.png" alt="Woman in Yoga position" />
+            </div>
+          </Cta>
         </main>
       </Container>
     </>
