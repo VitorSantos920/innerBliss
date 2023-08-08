@@ -29,13 +29,13 @@ function App() {
             </div>
 
             <div className="hero__img">
-              <img src="hero__img.png" alt="Yoga Illustration" />
+              <img src="/hero/hero__img.png" alt="Yoga Illustration" />
             </div>
           </Hero>
 
           <About className="about flex">
             <div className="about__img">
-              <img src="about__img.png" alt="Yoga Illustration" />
+              <img src="/about/about__img.png" alt="Yoga Illustration" />
             </div>
 
             <div className="about__content">
@@ -68,6 +68,8 @@ function App() {
               className="service__subtitle"
               title="Positive Outcomes of Yoga"
             />
+
+            <img src="/service/stress.svg" alt="" />
           </Service>
         </main>
       </Container>
