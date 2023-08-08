@@ -10,14 +10,7 @@ export const About = styled('section', {
   '.about__content': {
     width: '85%',
 
-    '.about__description': {
-      fontFamily: '$poppins',
-      color: '$descriptions',
-      fontWeight: '$lgt',
-      lineHeight: '1.5rem',
-      margin: '1rem 0 2rem',
-      textTransform: 'capitalize',
-    },
+    '.about__description': { lineHeight: '1.5rem' },
   },
 
   '.about__img': {

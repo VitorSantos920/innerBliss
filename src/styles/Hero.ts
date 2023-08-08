@@ -18,14 +18,6 @@ export const Hero = styled('section', {
       fontSize: '3rem',
       fontWeight: '$med',
     },
-
-    '.hero__description': {
-      fontFamily: '$poppins',
-      color: '$descriptions',
-      fontWeight: '$lgt',
-      lineHeight: '1.875rem',
-      margin: '1rem 0 2rem',
-    },
   },
 
   '.hero__img': {
