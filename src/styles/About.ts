@@ -4,7 +4,8 @@ export const About = styled('section', {
   alignItems: 'center',
   gap: '5rem',
   padding: '8rem 4rem 0',
-  backgroundImage: "url('/aboutBg.png')",
+  background: "url('/aboutBg.png') center",
+  backgroundSize: 'cover',
 
   '.about__content': {
     width: '85%',
