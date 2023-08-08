@@ -1,4 +1,5 @@
 import { Button } from './components/Button';
+import { Class } from './components/Class';
 import { Header } from './components/Header';
 import { AnxietyIcon } from './components/Icons/AnxietyIcon';
 import { FlexibleIcon } from './components/Icons/FlexibleIcon';
@@ -13,6 +14,7 @@ import { About } from './styles/About';
 import { Container } from './styles/Container';
 import { Cta } from './styles/Cta';
 import { Description } from './styles/Description';
+import { FavoriteClasses } from './styles/FavoriteClasses';
 import { Hero } from './styles/Hero';
 import { Services } from './styles/Services';
 
@@ -138,6 +140,54 @@ function App() {
               <img src="cta__img.png" alt="Woman in Yoga position" />
             </div>
           </Cta>
+
+          <FavoriteClasses className="classes flex">
+            <SectionTitle title="Yoga Classes" className="classes__title" />
+
+            <SectionSubtitle
+              className="classes__subtitle"
+              title="Most Favorite Classes"
+            />
+
+            <div className="classes__class-items flex">
+              <Class
+                imgName="hatha"
+                imgAlt=""
+                title="Hatha Yoga"
+                description="A gentle and foundational style that emphasizes basic postures, breathing exercises, and relaxation techniques. It is great for beginners and helps improve flexibility."
+              />
+              <Class
+                imgName="ashtanga"
+                imgAlt=""
+                title="Ashtanga"
+                description="A gentle and foundational style that emphasizes basic postures, breathing exercises, and relaxation techniques. It is great for beginners and helps improve flexibility."
+              />
+              <Class
+                imgName="lyengar"
+                imgAlt=""
+                title="Iyengar"
+                description=" It emphasizes holding poses for longer durations, making it ideal for those seeking therapeutic benefits or who prefer a more detail-oriented approach."
+              />
+              <Class
+                imgName="vinyasa"
+                imgAlt=""
+                title="Vinyasa"
+                description="A dynamic and flowing style that synchronises movement with breath. Vinyasa classes often include sequences of poses."
+              />
+              <Class
+                imgName="bikram"
+                imgAlt=""
+                title="Bikram"
+                description="Also known as hot yoga, Bikram Yoga is practiced in a heated room with a specific sequence of 26 postures and two breathing exercises."
+              />
+              <Class
+                imgName="kundalini"
+                imgAlt=""
+                title="Kundalini"
+                description="Integrating physical postures, breathing techniques, meditation, and mantra chanting, Kundalini Yoga aims to awaken the dormant spiritual energy within."
+              />
+            </div>
+          </FavoriteClasses>
         </main>
       </Container>
     </>
