@@ -4,6 +4,7 @@ export const ButtonContainer = styled('button', {
   backgroundColor: '$darkGreen',
   cursor: 'pointer',
   padding: '1rem 2rem',
+  fontFamily: '$poppins',
   fontWeight: '$med',
   border: 'none',
   borderRadius: '0.625rem',

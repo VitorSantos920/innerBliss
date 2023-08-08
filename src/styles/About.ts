@@ -1,34 +1,33 @@
 import { styled } from '../../stitches.config';
 
-export const Hero = styled('section', {
+export const About = styled('section', {
   alignItems: 'center',
-  gap: '1rem',
+  gap: '5rem',
   padding: '8rem 4rem 0',
-  backgroundImage: "url('/homeBg.png')",
-  backgroundSize: 'cover',
+  backgroundImage: "url('/aboutBg.png')",
 
-  '.hero__content': {
+  '.about__content': {
     width: '85%',
 
-    '.hero__title, .hero__description': { textTransform: 'capitalize' },
+    '.about__subtitle, .about__description': { textTransform: 'capitalize' },
 
-    '.hero__title': {
-      color: '#2F241F',
+    '.about__subtitle': {
+      color: '$titles',
       fontFamily: 'Merriweather Sans',
-      fontSize: '3rem',
+      fontSize: '2.5rem',
       fontWeight: '$med',
     },
 
-    '.hero__description': {
+    '.about__description': {
       fontFamily: '$poppins',
       color: '$descriptions',
       fontWeight: '$lgt',
-      lineHeight: '1.875rem',
+      lineHeight: '1.5rem',
       margin: '1rem 0 2rem',
     },
   },
 
-  '.hero__img': {
+  '.about__img': {
     width: '80%',
 
     img: { width: '100%' },

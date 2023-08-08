@@ -9,6 +9,7 @@ export const { styled } = createStitches({
 
     colors: {
       darkGreen: '#374600 ',
+      lightGreen: '#AAB487',
       titles: '#000000 ',
       descriptions: '#575757 ',
     },
